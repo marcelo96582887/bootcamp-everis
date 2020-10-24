@@ -16,11 +16,20 @@ body {
 
 }
 
+header {
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 5050;
+}
+
 header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+ 
 }
 
 header .container .logo {
@@ -101,4 +110,17 @@ main .filme-principal .container {
 
 .carousel-filmes {
     margin-top: 5px;
+}
+
+.carousel-series {
+    margin-top: 5px;
+}
+
+.carousel-documentarios {
+    margin-top: 5px;
+}
+
+.subtitulo {
+    margin: 5px;
+    font-size: 24px;
 }

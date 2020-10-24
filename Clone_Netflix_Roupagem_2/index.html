@@ -17,9 +17,9 @@
             <h2 class="logo">NETFLIX</h2>
             <nav>
                 <a href="#">Início</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+                <a href="#series">Séries</a>
+                <a href="#filmes">Filmes</a>
+                <a href="#documentarios">Documentários</a>
             </nav>
         </div>
     </header>
@@ -30,11 +30,11 @@
                 <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste
                     drama vencedor do Emmy e do Globo de Ouro.</p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="assistir()"> 
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="maisInformacoes()">
                         <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
                     </button>
@@ -43,7 +43,8 @@
         </div>
     </main>
 
-    <div class="carousel-filmes">
+    <section class="carousel-series">
+        <h4 id="series" class="subtitulo">Séries</h4>
         <div class="owl-carousel own-theme">
             <div class="item">
                 <img class="box-filme" src="img/mini1.jpg" alt="Filmes e Séries">
@@ -75,13 +76,88 @@
             <div class="item">
                 <img class="box-filme" src="img/mini10.jpg" alt="Filmes e Séries">
             </div>
+        </div>
+    </section>
+
+
+    <section class="carousel-filmes">
+        <h4 id="filmes" class="subtitulo">Filmes em Destaque</h4>
+        <div class="owl-carousel own-theme">
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="Filmes e Séries">
             </div>
-</div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="Filmes e Séries">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="carousel-documentarios">
+        <h4 id="documentarios" class="subtitulo">Documentarios</h4>
+        <div class="owl-carousel own-theme">
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="Filmes e Séries">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="Filmes e Séries">
+            </div>
+        </div>
+    </section>
 
     <script src="https://kit.fontawesome.com/964e7e3adc.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
